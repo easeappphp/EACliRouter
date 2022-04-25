@@ -1,0 +1,26 @@
+{
+    "name": "easeappphp/ea-cli-router",
+    "description": "EACliRouter is a Simple Request Router, that uses plain Multi-dimensional Arrays of Routes, to handle both Static & Dynamic Routes for PHP based CLI Applications, Cron jobs & Message queue worker setups.",
+	"keywords": ["routing", "router", "php", "CLI", "Cron job", "Message Queue Worker"],
+    "homepage": "https://www.easeapp.org/",
+    "type": "library",
+	"require": {
+        "php": ">=7.4"
+    },
+	"require-dev": {
+        "php": ">=7.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raghuveer Dendukuri",
+            "email": "raghuveer.dendukuri@gmail.com"
+        }
+    ],
+	"autoload": {
+       
+	   "psr-4": {
+            "EACliRouter\\": "src"
+        }
+    }
+}
