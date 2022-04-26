@@ -199,7 +199,7 @@ class EACliRouter implements CliRouterInterface
 
 								'matched_route_key' => $key,
 								'matched_page_filename' => $routeArray['page_filename'],
-								'cli_process_exit_code' => 0
+								//'cli_process_exit_code' => 0
 								
 							];
 							
@@ -217,7 +217,7 @@ class EACliRouter implements CliRouterInterface
 			
 			'matched_route_key' => "not-found",
 			'matched_page_filename' => "not-found.php",
-			'cli_process_exit_code' => 1
+			//'cli_process_exit_code' => 1
 			
 		];
 	}
