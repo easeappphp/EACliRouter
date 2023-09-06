@@ -14,7 +14,7 @@ use function count;
 use function mb_strlen;
 use function filter_var;
 use function implode;
-use const FILTER_SANITIZE_STRING;
+//use const FILTER_SANITIZE_STRING;
 
 /**
  * EACliRouter Class
@@ -138,7 +138,8 @@ class EACliRouter implements CliRouterInterface
 	 */
 	public function matchRoute($routesArray, $cliPath, $configuredMaxRouteLength)
 	{
-		if (mb_strlen(filter_var($cliPath, FILTER_SANITIZE_STRING))<$configuredMaxRouteLength) {
+		//if (mb_strlen(filter_var($cliPath, FILTER_SANITIZE_STRING))<$configuredMaxRouteLength) {
+		if (mb_strlen($cliPath)<$configuredMaxRouteLength) {	
 			
 			$this->cliPathParams = $this->getCliPathParams($cliPath);
 			 
